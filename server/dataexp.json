@@ -1,0 +1,213 @@
+{
+    "result": "ok",
+    "response": "collection",
+    "data": [
+        {
+            "id": "2da0b883-10cb-42ca-aa10-d4af85f82cbf",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Tsubaki the Hope Seller"
+                },
+                "altTitles": [
+                    {
+                        "ja": "当て屋の椿"
+                    },
+                    {
+                        "ja-ro": "Ate-ya no Tsubaki"
+                    },
+                    {
+                        "en": "Hot Detective Tsubaki"
+                    },
+                    {
+                        "zh": "寻因异闻录·椿"
+                    },
+                    {
+                        "zh-hk": "尋因異聞錄·椿"
+                    },
+                    {
+                        "ko": "아테야의 츠바키"
+                    },
+                    {
+                        "ja-ro": "Ateya no Tsubaki"
+                    },
+                    {
+                        "en": "Tsubaki the Hope Seller"
+                    }
+                ],
+                "description": {
+                    "en": "Housen is an Edo period erotic painter, who stumbles into a murder mystery involving women who hooked up with one of his patrons. \nWith the help of Tsubaki, a girl he runs into on the street who seems to know more about him than he does and is an artist herself, they start unraveling mysteries involving sex, murder, and occasionally the occult…"
+                },
+                "isLocked": false,
+                "links": {
+                    "al": "49321",
+                    "ap": "ateya-no-tsubaki",
+                    "bw": "series/16712/list",
+                    "kt": "7436",
+                    "mu": "29100",
+                    "amz": "https://www.amazon.co.jp/gp/product/B074C9FCCR",
+                    "ebj": "https://ebookjapan.yahoo.co.jp/books/127962/",
+                    "mal": "19321",
+                    "raw": "https://manga-park.com/title/7517"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "",
+                "lastChapter": "",
+                "publicationDemographic": "seinen",
+                "status": "ongoing",
+                "year": 2008,
+                "contentRating": "erotica",
+                "tags": [
+                    {
+                        "id": "33771934-028e-4cb3-8744-691e866a923e",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Historical"
+                            },
+                            "description": {},
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Romance"
+                            },
+                            "description": {},
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": {},
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "97893a4c-12af-4dac-b6be-0dffb353568e",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Sexual Violence"
+                            },
+                            "description": {},
+                            "group": "content",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "b29d6a3d-1569-4e7a-8caf-7557bc92cd5d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Gore"
+                            },
+                            "description": {},
+                            "group": "content",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "cdad7e68-1419-41dd-bdce-27753074a640",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Horror"
+                            },
+                            "description": {},
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "eabc5b4c-6aff-42f3-b657-3e90cbd00b75",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Supernatural"
+                            },
+                            "description": {},
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "ee968100-4191-4968-93d3-f82d72be7e46",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Mystery"
+                            },
+                            "description": {},
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "f8f62932-27da-4fe4-8ee1-6779a8c5edba",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Tragedy"
+                            },
+                            "description": {},
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2018-06-02T11:03:14+00:00",
+                "updatedAt": "2024-04-11T20:16:39+00:00",
+                "version": 15,
+                "availableTranslatedLanguages": [
+                    "en"
+                ],
+                "latestUploadedChapter": "c5cf4952-a485-4ac2-be6a-86ce786d8a8a"
+            },
+            "relationships": [
+                {
+                    "id": "eecfd016-7cd5-4687-8fe4-bea51c66f54a",
+                    "type": "author"
+                },
+                {
+                    "id": "eecfd016-7cd5-4687-8fe4-bea51c66f54a",
+                    "type": "artist"
+                },
+                {
+                    "id": "ff338345-a559-45a2-aa15-7d140d369b6a",
+                    "type": "cover_art"
+                },
+                {
+                    "id": "a8e5651c-1b15-44ea-b0fe-3cb52af149c0",
+                    "type": "manga",
+                    "related": "colored"
+                }
+            ]
+        } 
+    ],
+    "limit": 10,
+    "offset": 0,
+    "total": 76664
+}
