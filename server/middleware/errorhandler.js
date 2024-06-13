@@ -18,8 +18,6 @@ const errorHandler = (error, request, response, next) => {
     error.name === "JsonWebTokenError"
   ) {
     response.status(401).json({ message: error.message });
-  } else if (error.name === "uploadFailed") {
-    response.status(400).json({ message: error.message });
   } else {
     response.status(500).json({ message: "Internal Server Error" });
   }
