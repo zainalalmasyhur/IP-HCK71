@@ -1,0 +1,108 @@
+/* Login.css */
+
+.login-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px; /* Tambahkan padding di sisi kiri dan kanan */
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/pexels-kubiceknov-924824.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 1; /* Sesuaikan dengan kebutuhan Anda */
+    z-index: -1;
+  }
+
+  .login-image-container {
+    flex: 1;
+    margin-right: 20px; /* Jarak antara gambar dan formulir */
+  }
+  
+  .login-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Jarak antara formulir dan gambar */
+    max-width: 400px; /* Maksimum lebar formulir */
+  }
+  
+  .login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .btn-login {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1877f2;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-login:hover {
+    background-color: #166fe5;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  .signup-link {
+    text-align: center;
+  }
+  
+  .signup-link a {
+    color: #1877f2;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  #bodylogin {
+    overflow: hidden;
+  }
+  #buttonDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Sesuaikan dengan kebutuhan Anda */
+  }
+  .login-form {
+    /* ... */
+    text-align: center; /* Memposisikan teks "or login with" ke tengah */
+  }
+  
+  .mt-3 {
+    margin-top: 1rem; /* Sesuaikan dengan jarak yang diinginkan */
+  }
