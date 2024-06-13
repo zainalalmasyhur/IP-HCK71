@@ -49,7 +49,7 @@ export default function Homepage() {
 
   useEffect(() => {
     // Panggil fetchManga dengan judul yang ditentukan saat komponen dimuat
-    fetchManga("SAIKI");
+    fetchManga("conan");
   }, []);
 
   const handleSubmit = async (e) => {

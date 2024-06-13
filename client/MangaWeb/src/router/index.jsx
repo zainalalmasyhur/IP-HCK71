@@ -3,6 +3,8 @@ import Login from "../Pages/Login";
 import RootLayout from "../layout/Layout";
 import Homepage from "../Pages/Homepage";
 import Detail from "../Pages/Detail";
+import Chapter from "../Pages/Chapter";
+import Register from "../Pages/Register";
 
 const router = createBrowserRouter([
   {
@@ -15,8 +17,15 @@ const router = createBrowserRouter([
     },
   },
   {
+    path: "/register",
+    element: <Register />,
+  },
+  {
     path: "/homepage",
     element: <RootLayout />,
+    loader: () => {
+      return !localStorage.getItem("access_token") ? redirect("/") : null;
+    },
     children: [
       {
         path: "/homepage",
@@ -25,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/homepage/detail/:id",
         element: <Detail />,
+      },
+      {
+        path: "/homepage/chapter/:chapterId", // Tambahkan rute baru untuk Chapter
+        element: <Chapter />,
       },
     ],
   },

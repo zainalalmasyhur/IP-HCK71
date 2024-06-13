@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import "./Login.css"; // Import file CSS kustom untuk styling tambahan
 import animationData from "../assets/Animation - 1717523045286.json"; // Import file animasi LottieFiles
 import Lottie from "react-lottie";
+import { Link } from "react-router-dom";
+import showToast from "../utils/toast";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -26,6 +28,7 @@ export default function Login() {
       navigate("/homepage");
     } catch (error) {
       console.error(error.response?.data?.message);
+      showToast(error.response?.data?.message || error.message);
     }
   };
 
@@ -39,9 +42,11 @@ export default function Login() {
         },
       });
       console.log("Encoded JWT ID token: " + response.credential);
+      localStorage.access_token = res.data.access_token;
       navigate("/homepage");
     } catch (error) {
       console.error(error.response?.data?.message);
+      showToast(error.response?.data?.message || error.message);
     }
     // console.log("Encoded JWT ID token: " + response.credential);
   }
@@ -107,7 +112,7 @@ export default function Login() {
         </form>
         <div className="signup-link mt-3">
           <p>
-            Don't have an account? <a href="#">Sign up</a>
+            Don't have an account? <Link to={"/register"}>Sign up</Link>
           </p>
         </div>
       </div>
