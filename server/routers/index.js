@@ -4,6 +4,7 @@ const router = express.Router();
 const LoginController = require(`../controllers/LoginController`);
 const RegisterController = require(`../controllers/RegisterController`);
 const CommentController = require(`../controllers/CommentController`);
+const MidtransController = require(`../controllers/MidtransController`);
 const { errorHandler } = require(`../middleware/errorhandler`);
 
 const {
@@ -23,6 +24,10 @@ router.delete(
   "/comments/:id",
   authorization,
   CommentController.deleteCommentById
+);
+router.get(
+  "/payment/midtrans/initiate",
+  MidtransController.initiateMidtransTrx
 );
 
 router.use(errorHandler);

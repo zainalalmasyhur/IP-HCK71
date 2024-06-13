@@ -27,7 +27,7 @@ export default function Login() {
       localStorage.access_token = response.data.access_token;
       navigate("/homepage");
     } catch (error) {
-      console.error(error.response?.data?.message);
+      console.error(error.message);
       showToast(error.response?.data?.message || error.message);
     }
   };

@@ -86,12 +86,21 @@ export default function Chapter() {
         },
       });
       if (data.updatedComment.ChapterId === currentChapterId) {
-        setComments((prevComments) =>
-          prevComments.map((comment) =>
-            comment.id === id ? data.updatedComment : comment
-          )
-        );
+        // Ensure that the updated comment data includes user information
+        if (data.updatedComment.User && data.updatedComment.User.username) {
+          setComments((prevComments) =>
+            prevComments.map((comment) =>
+              comment.id === id ? data.updatedComment : comment
+            )
+          );
+        } else {
+          console.error(
+            "User information missing in updated comment:",
+            data.updatedComment
+          );
+        }
       }
+      fetchComments();
     } catch (error) {
       console.log(error);
       showToast(error.response?.data?.message || error.message);

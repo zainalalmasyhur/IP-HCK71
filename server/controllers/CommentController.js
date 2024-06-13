@@ -1,4 +1,3 @@
-const { where } = require("sequelize");
 const { User, Comment } = require(`../models/index`);
 
 class CommentController {
@@ -29,9 +28,16 @@ class CommentController {
         throw { name: "notFound", message: "error not found" };
       }
 
+      // Perbarui komentar hanya jika userId yang mengedit sesuai dengan pemilik komentar
+      if (updatedComment.UserId !== req.user.id) {
+        throw {
+          name: "forbidden",
+          message: "Not authorized to update this comment",
+        };
+      }
+
       await updatedComment.update({
         comment,
-        UserId: req.user.id,
       });
 
       res.status(200).json({ updatedComment });
@@ -39,7 +45,6 @@ class CommentController {
       next(error);
     }
   }
-
   static async deleteCommentById(req, res, next) {
     try {
       let { id } = req.params;
