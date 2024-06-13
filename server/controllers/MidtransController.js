@@ -22,7 +22,7 @@ class MidtransController {
           secure: true,
         },
         customer_details: {
-          first_name: req.user.name,
+          first_name: req.user.username,
           email: req.user.email,
         },
       };
